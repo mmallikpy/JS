@@ -1,22 +1,23 @@
-* {
+*{
     margin: 0px;
     padding: 0px;
 }
-body {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: bisque;
+
 }
 
 .centered-div {
-    width: 100%; /* Set your desired width */
-    height: 100%; /* Set your desired height */
+    height: 100vh; /* Set your desired width */
+    width: 100%; /* Set your desired height */
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    
 }
+
 button {
     height: 70px;
     width: 200px;
@@ -25,9 +26,11 @@ button {
     color: white;
     font-size: 25px;
     padding: 10px;
+    
 }
 
 #value {
+    height: 50px;
     margin-bottom: 10px;
     width: 200px;
     font-size: 25px;
