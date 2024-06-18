@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.centered-div {
+    width: 100%; /* Set your desired width */
+    height: 100%; /* Set your desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+button {
+    height: 70px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#value {
+    margin-bottom: 10px;
+    width: 200px;
+    font-size: 25px;
+    padding: 5px;
+}
