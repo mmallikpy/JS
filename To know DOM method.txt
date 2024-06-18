@@ -1,0 +1,7 @@
+# It will show us the all DOM methods
+# Go to console and pest it.
+
+
+for (let prop in document) {
+  console.log(prop);
+}
