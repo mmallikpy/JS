@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: bisque;
+
+}
+
+.centered-div {
+    height: 100vh; /* Set your desired width */
+    width: 100%; /* Set your desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    height: 70px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+#copy{
+    width: 200px;
+    font-size: 25px;
+    padding: 5px;
+    height: 65px;
+}
+
+#value {
+    height: 50px;
+    margin-bottom: 10px;
+    width: 200px;
+    font-size: 25px;
+    padding: 5px;
+}
