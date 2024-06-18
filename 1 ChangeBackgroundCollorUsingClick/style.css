@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-div {
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    height: 70px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
