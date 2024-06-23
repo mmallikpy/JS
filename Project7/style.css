@@ -14,6 +14,7 @@ body {
     align-items: center;
     color: white;
     font-size: 20px;
+    position: relative;
 }
 .content_1, .content_2 {
     margin-bottom: 10px;
@@ -52,4 +53,44 @@ body {
     background-color: aquamarine;
     color: black;
     font-weight: bold;
+}
+
+.tostMessage {
+    height: 50px;
+    width: 170px;
+    background-color: aquamarine;
+    font-size: 18px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition: 1000ms;
+}
+
+.tostMessageAnimation_in {
+    animation: tost_message_in .5s;
+}
+
+.tostMessageAnimation_out {
+    animation: tost_message_out .5s;
+}
+
+@keyframes tost_message_in {
+    from{
+        margin-right: -200px;
+    }
+    to{
+        margin-right: 20px;
+    }
+}
+
+@keyframes tost_message_out {
+    from{
+        margin-right: 20px;
+    }
+    to{
+        margin-right: -200px;
+    }
 }
