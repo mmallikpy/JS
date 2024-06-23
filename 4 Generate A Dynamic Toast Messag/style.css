@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: bisque;
+
+}
+
+.centered-div {
+    height: 100vh; /* Set your desired width */
+    width: 100%; /* Set your desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    height: 70px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+#copy{
+    width: 200px;
+    font-size: 25px;
+    padding: 5px;
+    height: 65px;
+}
+
+#value {
+    height: 50px;
+    margin-bottom: 10px;
+    width: 200px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.tostmessage {
+    height: 70px;
+    width: 180px;
+    background-color: rgb(120, 236, 120);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    padding-top: 5px;
+}
+.tostmessage1 {
+    display: hidden;
+}
+
+.tost_animation_in {
+    animation: tost-animation-in 0.5s ease-in;
+}
+.tost_animation_out {
+    animation: tost-animation-out 0.5s ease-out;
+}
+
+@keyframes tost-animation-in {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to{
+        transition: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tost-animation-out {
+    from{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}

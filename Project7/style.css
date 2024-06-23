@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: blueviolet;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.content_1, .content_2 {
+    margin-bottom: 10px;
+}
+
+.first_input, .second_input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.copy_btn_1, .copy_btn_2 {
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    font-size: 18px;
+}
+.changeColorBtn {
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    font-size: 18px;
+}
+
+.tostMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+}
