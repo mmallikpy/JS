@@ -98,4 +98,4 @@ function manulColor() {
     })
 }
 manulColor()
-console.log("test")
+ 
