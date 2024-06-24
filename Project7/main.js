@@ -92,10 +92,24 @@ function manulColor() {
             let reg_p = x.match(/[A-Fa-f0-9]{6}/i);
             reg = '#'+ reg_p
             container.style.backgroundColor = reg
-            colorCopy(reg)
-
+            // colorCopy(reg)
+            // console.log("Test---", reg_p)
+            let rgb_final = hexToRGB(reg_p)
+            second_input.value = rgb_final
         }
     })
 }
 manulColor()
- 
+
+/**
+ * convert hex color
+ * @param {string} hex_val
+ */
+
+function hexToRGB(hex_val) {
+    let red = parseInt(hex_val.input.slice(0, 2), 16);
+    let green = parseInt(hex_val.input.slice(2, 4), 16);
+    let blue = parseInt(hex_val.input.slice(4), 16);
+    return `RGB(${red}, ${green}, ${blue})`;
+}
+
