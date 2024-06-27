@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project8</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="mainContent" id="mainContent">
+            <div class="headingContainer" id="headingContainer">
+                <div class="heading">Display Color</div>
+                <button type="submit" class="randomColor" id="randomColor">Random Color</button>
+            </div>
+            <hr>
+            <input type="text" name="color" class="color" id="color" disabled>
+            
+            <div class="changeandcopycontainer" id="changeandcopycontainer">
+                <div class="heading">Change & Copy Color</div>
+                <button type="submit" class="copytoclip" id="copytoclip">Copy To Clipboard</button>
+            </div>
+            <hr>
+            <div class="selectcopymode" id="selectcopymode">
+                <div class="heading">Select Copy Mode</div>
+                <div>
+                    <input type="radio" name="hexrgb" id="hex" checked>
+                    <label for="hex">Hex</label>
+                    
+
+                    <input type="radio" name="hexrgb" id="rgb">
+                    <label for="rgb">RGB</label>
+                </div>
+
+            </div>
+            <div class="hexrgb">
+                <div class="hexrgb1">
+                    <label for="hexColor">Hex</label>
+                    <input type="text" name="hex" value="000000" id="hexColor" class="hexColorinput" >
+                    <div class="icon">
+                        <i class="fa-solid fa-hashtag hashicon"></i>
+                    </div>
+                    
+                </div>
+                <div class="hexrgb2">
+                    <label for="rgbColor">RGB</label>
+                    <input type="text" name="rbg" id="rgbColor" disabled value="0,0,0">
+                </div>
+            </div>
+            <div class="slider-text">Adjust RGB Colors</div>
+<!-- Start the range silder -->
+            <div class="slider">
+                <div>
+                    <div class="lable1">
+                        <span>Red</span>
+                        <span>255</span>
+                    </div>
+                    <input type="range" min="1" max="255" value="255" class="slider-red" id="myRange1">
+                    <div style="margin-top: 15px; font-size: 15px" id="valueOutput" class="valueOutput">
+                        Value: <span id="spanOut"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="lable2">
+                        <span>Green</span>
+                        <span>255</span>
+                    </div>
+                    <input type="range" min="1" max="255" value="" class="slider" id="myRange2">
+                    <div style="margin-top: 15px; font-size: 15px" id="valueOutput" class="valueOutput">
+                        Value: <span id="spanOut1"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="lable3">
+                        <span>Blue</span>
+                        <span>255</span>
+                    </div>
+                    <input type="range" min="1" max="255" value="255" class="slider" id="myRange3">
+                    <div style="margin-top: 15px; font-size: 15px" id="valueOutput" class="valueOutput">
+                        Value: <span id="spanOut2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>

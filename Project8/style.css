@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: blueviolet;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    background-color: rgb(239, 223, 199);
+}
+.mainContent{
+    height: 620px;
+    width: 40%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 63px 16px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 30px;
+}
+.headingContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+.heading{
+    font-weight: bold;
+}
+.randomColor{
+    color: red;
+    border: none;
+    background: none;
+    font-weight: bold;
+}
+.randomColor:hover{
+    color: green;
+    cursor: pointer;
+}
+hr {
+    border: 1px solid rgba(186, 182, 182, 0.595);
+    margin-bottom: 15px;
+}
+.color {
+    height: 100px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background-color: rgb(239, 223, 199);
+}
+.changeandcopycontainer {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.copytoclip{
+    color: red;
+    border: none;
+    background: none;
+    font-weight: bold;
+    padding-bottom: -100px;
+}
+.copytoclip:hover{
+    color: green;
+    cursor: pointer;
+}
+.selectcopymode{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.hexrgb{
+    margin-top: 30px;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    position: relative;
+}
+.hexrgb1{
+    width: 50%;
+}
+.hexrgb1 label {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+.hexrgb2{
+    width: 50%;
+}
+.hexrgb2 label {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+.hexrgb #hexColor {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+}
+.hexrgb #rgbColor {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+}
+.hexColorinput{
+    position: relative;
+    text-align: center;
+}
+.icon{
+    background-color: rgb(31, 107, 173);
+    width: 35px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 33px;
+}
+
+.slider-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+}
+.lable1{
+    display: flex;
+    justify-content: space-between;
+}
+.lable2{
+    display: flex;
+    justify-content: space-between;
+}
+.lable3{
+    display: flex;
+    justify-content: space-between;
+}
+.lable1, .lable2, .lable3, .valueOutput {
+    font-size: 15px;
+    font-weight: bold;
+}
+#myRange[type="range"] {
+    background: green;
+}
+/* ------------------------------------------- */
+.content_1, .content_2 {
+    margin-bottom: 10px;
+}
+
+.first_input, .second_input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.copy_btn_1, .copy_btn_2 {
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    font-size: 18px;
+}
+.changeColorBtn {
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    font-size: 18px;
+}
+
+.tostMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+}
+
+.tostMessage {
+    height: 50px;
+    width: 170px;
+    background-color: aquamarine;
+    font-size: 18px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition: 1000ms;
+}
+
+.tostMessageAnimation_in {
+    animation: tost_message_in .5s;
+}
+
+.tostMessageAnimation_out {
+    animation: tost_message_out .5s;
+}
+
+@keyframes tost_message_in {
+    from{
+        margin-right: -200px;
+    }
+    to{
+        margin-right: 20px;
+    }
+}
+
+@keyframes tost_message_out {
+    from{
+        margin-right: 20px;
+    }
+    to{
+        margin-right: -200px;
+    }
+}
+

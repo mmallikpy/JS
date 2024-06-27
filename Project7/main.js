@@ -112,4 +112,3 @@ function hexToRGB(hex_val) {
     let blue = parseInt(hex_val.input.slice(4), 16);
     return `RGB(${red}, ${green}, ${blue})`;
 }
-
