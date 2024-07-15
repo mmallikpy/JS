@@ -77,7 +77,6 @@ function hexToRGB(hex_val) {
 // Manual color add using input box
 function manulColor() {
     document.addEventListener('input', function () {
-        console.log("--------------1", hexbox.value);
         let x = hexbox.value
         if (x.length == 6) {
             let reg_p = x.match(/[A-Fa-f0-9]{6}/i);
@@ -86,11 +85,9 @@ function manulColor() {
             // colorCopy(reg)
             // console.log("Test---", reg_p)
             let rgb_final = hexToRGB(reg_p)
-            console.log(rgb_final)
             rbgbox.value = `RGB(${rgb_final})`
             let splitValue = rgb_final.split(',')
             let { red, green, blue } = splitValue
-            console.log(splitValue[0], splitValue[1], splitValue[2])
             
             slide1.value = splitValue[0]
             slide2.value =  splitValue[1].split(' ')[1]
@@ -102,7 +99,43 @@ function manulColor() {
         }
     })
 }
+
+function rangeSliderValueCollect(sliderName) {
+    sliderName.addEventListener('input', function () {
+        // console.log(sliderName.value)
+        return sliderName.value
+    })
+}
+function dataCollectionFromSlider() {
+    let slider1 = rangeSliderValueCollect(slide1)
+    let slider2 =rangeSliderValueCollect(slide2)
+    let slider3 = rangeSliderValueCollect(slide3)
+    console.log(`RGB(${slider1})`)
+    let slider5 = {
+        red: slider1,
+        green: slider2,
+        blue: slider3
+    }
+    let hexColor = hex(slider5)
+    // console.log(hexColor)
+}
+dataCollectionFromSlider()
+
+
 manulColor()
+if (location.reload) {
+    rbgbox.value = "";
+    hexbox.value = "";
+    slide1.value = 0;
+    slide2.value = 0;
+    slide3.value = 0;
+}
+
+// slide1.addEventListener('input',function () {
+//     console.log(slide1.value)
+// })
+
+
 
 // // Global variable diclaration
 // let first_input = document.getElementById('first_input');

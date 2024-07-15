@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main_div{
+    background-color: beige;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstDiv{
+    height: 30dvh;
+    width: 50dvw;
+    display: flex;
+    flex-direction: column;
+}
+.inputbyuser{
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.output{
+    text-align: center;
+    font-size: 20px;
+}
