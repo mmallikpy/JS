@@ -170,5 +170,6 @@ reduce();
 
 ## Answer is :
 ```js
-Output are -1, -2, Reason  count reduce the value 1 every time. Hear we call the function 2 times.
+Output are -1, -2,
+Reason  count reduce the value 1 every time. Hear we call the function 2 times.
 ```
