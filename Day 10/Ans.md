@@ -30,7 +30,10 @@ add(5);
 add(10);
 console.log(total);
 ```
-
+## Answer is :
+```js
+Mistake is that in Global scope, we declare let instead of var. But in a video you recommend that don't use the var reason it's can overlap the variable name.
+```
 ## 3. Create a function with a nested function and log a variable from the parent function.
 
 ## 4. Use a loop inside a function and declare a variable inside the loop. Can you access it outside?
