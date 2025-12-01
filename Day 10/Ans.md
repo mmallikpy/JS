@@ -125,7 +125,8 @@ outer();
 
 ## Answer is :
 ```js
-output will "Hi". Reason Scope Chain, If it's not found the variable inside this Function then it's search upper Function.
+output will "Hi".
+Reason Scope Chain, If it's not found the variable inside this Function then it's search upper Function.
 ```
 
 
@@ -149,7 +150,8 @@ outer();
 ```
 ## Answer is :
 ```js
-output will "Inner". Reason Scope chain. It's in same Scope.
+output will "Inner".
+Reason Scope chain. It's in same Scope.
 ```
 
 
@@ -170,6 +172,6 @@ reduce();
 
 ## Answer is :
 ```js
-Output are -1, -2,
+Output are -1, -2
 Reason  count reduce the value 1 every time. Hear we call the function 2 times.
 ```
