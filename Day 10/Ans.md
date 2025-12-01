@@ -32,9 +32,22 @@ console.log(total);
 ```
 ## Answer is :
 ```js
-Mistake is that in Global scope, we declare let instead of var. But in a video you recommend that don't use the var reason it's can overlap the variable name.
+The mistake is that in the global scope, we declare let instead of var. But in a video you recommend that you don't use the var reason because it can overlap the variable name.
 ```
 ## 3. Create a function with a nested function and log a variable from the parent function.
+
+## Answer is :
+```js
+Ans:-
+function outer(){
+  let name = 'Test name'
+  function inner(){
+    console.log(name)
+  }
+  inner()
+}
+outer()
+```
 
 ## 4. Use a loop inside a function and declare a variable inside the loop. Can you access it outside?
 
