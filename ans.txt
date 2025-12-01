@@ -1,3 +1,6 @@
+40 days of Javascript task assignment
+Day 10
+
 1. What will be the output of the following code and why?
 Ans: Bob
 
@@ -14,7 +17,6 @@ add(10);
 console.log(total);
 
 Ans: Mistake is that in Global scope, we declare let instead of var. But in a video you recommend that don't use the var reason it's can overlap the variable name.
-
 
 3. Create a function with a nested function and log a variable from the parent function.
 Ans:-
@@ -53,4 +55,10 @@ Reason, we assign variable before console log.
 Ans: B: Only inside showAge
 
 8. What will be the output and explain the output?
-Ans: output will "Hi"
+Ans: output will "Hi". Reason Scope Chain, If it's not found the variable inside this Function then it's search upper Function
+
+9. What will be the output and why?
+Ans: output will "Inner". Reason Scope chain. It's in same Scope
+
+10. What will be the output and why?
+Ans: Output are -1, -2, Reason  count reduce the value 1 every time. Hear we call the function 2 times.
