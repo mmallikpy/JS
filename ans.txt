@@ -1,0 +1,56 @@
+1. What will be the output of the following code and why?
+Ans: Bob
+
+2. What is the mistake in the code below?
+
+let total = 0; // Global, bad practice
+
+function add(num) {
+    total += num;
+}
+
+add(5);
+add(10);
+console.log(total);
+
+Ans: Mistake is that in Global scope, we declare let instead of var. But in a video you recommend that don't use the var reason it's can overlap the variable name.
+
+
+3. Create a function with a nested function and log a variable from the parent function.
+Ans:-
+function outer(){
+  let name = 'Test name'
+  function inner(){
+    console.log(name)
+  }
+  inner()
+}
+outer()
+
+
+4. Use a loop inside a function and declare a variable inside the loop. Can you access it outside?
+Ans: No we can't access the variable.
+
+5. Write a function that tries to access a variable declared inside another function.
+Ans:
+function a(){
+  let varA = 'Function a'
+}
+
+function b(){
+  let varB = 'Function b'
+  console.log(varA)
+}
+
+b()
+
+6. What will be the output and why?
+Ans:
+Output = Cannot access 'a' before initialization
+Reason, we assign variable before console log.
+
+7. Where is the age variable accessible?
+Ans: B: Only inside showAge
+
+8. What will be the output and explain the output?
+Ans: output will "Hi"
