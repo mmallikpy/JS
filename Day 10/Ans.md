@@ -51,12 +51,38 @@ outer()
 
 ## 4. Use a loop inside a function and declare a variable inside the loop. Can you access it outside?
 
+## Answer is :
+```js
+No, we can't access the variable.
+```
+
 ## 5. Write a function that tries to access a variable declared inside another function.
+
+## Answer is :
+```js
+function a(){
+  let varA = 'Function a'
+}
+
+function b(){
+  let varB = 'Function b'
+  console.log(varA)
+}
+
+b()
+```
+
 
 ## 6. What will be the output and why?
 ```js
 console.log(a);
 let a = 10;
+```
+
+## Answer is :
+```js
+Output = Cannot access 'a' before initialization
+Reason, we assign variable before console log.
 ```
 
 ## 7. Where is the `age` variable accessible?
@@ -75,6 +101,11 @@ Options:
 - C: It will cause an error
 - D: None of the above
 
+## Answer is :
+```js
+B: Only inside showAge
+```
+
 ## 8. What will be the output and explain the output?
 ```js
 let message = "Hello";
@@ -91,6 +122,13 @@ function outer() {
 
 outer();
 ```
+
+## Answer is :
+```js
+output will "Hi". Reason Scope Chain, If it's not found the variable inside this Function then it's search upper Function.
+```
+
+
 
 ## 9. What will be the output and why?
 ```js
@@ -109,6 +147,11 @@ function outer() {
 
 outer();
 ```
+## Answer is :
+```js
+output will "Inner". Reason Scope chain. It's in same Scope.
+```
+
 
 ## 10. What will be the output and why?
 ```js
@@ -123,4 +166,9 @@ function counter() {
 const reduce = counter();
 reduce();
 reduce();
+```
+
+## Answer is :
+```js
+Output are -1, -2, Reason  count reduce the value 1 every time. Hear we call the function 2 times.
 ```
