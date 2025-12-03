@@ -131,22 +131,37 @@
 // outer();
 
 
-function counter() {
+// function counter() {
+//     let count = 0;
+//     return function () {
+//         count--;
+//         console.log(count);
+//     };
+// }
+
+// const reduce = counter();
+// reduce();
+// reduce();
+
+
+// function testClosure() {
+//   let x = 10;
+  
+//   return function () {
+//     return x * x;
+//   };
+
+// }
+// console.log(testClosure()());
+
+
+const button_click = document.getElementById('buttonForCount')
+function btnCounter(){
     let count = 0;
-    return function () {
-        count--;
+    return button_click.addEventListener('click', function () {
+        count++;
         console.log(count);
-    };
+    });
 }
+btnCounter()
 
-const reduce = counter();
-reduce();
-reduce();
-
-
-function x(){
-  let count = 0;
-  count++;
-}
-console.log(x())
-console.log(x())

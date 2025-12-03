@@ -23,7 +23,7 @@ counter();
 
 ### Reason
 
-Reason we call the function 2 times. Inside the outer function have one counter and inner function that return the incremental value. Finally the `closer` can memories the variable data.
+We call the function 2 times. Inside the outer function have one counter and inner function that return the incremental value. Finally the `closer` can memories the variable data.
 
 ## 2. What will be the output and why?
 
@@ -40,10 +40,28 @@ console.log(testClosure()());
 ## Answer is :
 
 ```js
-1, 2;
+100;
 ```
 
+### Reason
+
+In this code inside the outer function have 2 return, first `testClosure()` return the inner function and `testClosure()()` return the `x * x` value.
+
 ## 3. Create a button dynamically and attach a click event handler using a closure. The handler should count and log how many times the button was clicked.
+
+### Answer is:
+
+```js
+const button_click = document.getElementById("buttonForCount");
+function btnCounter() {
+  let count = 0;
+  return button_click.addEventListener("click", function () {
+    count++;
+    console.log(count);
+  });
+}
+btnCounter();
+```
 
 ## 4. Write a function `createMultiplier(multiplier)` that returns another function to multiply numbers.
 
