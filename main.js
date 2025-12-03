@@ -142,3 +142,11 @@ function counter() {
 const reduce = counter();
 reduce();
 reduce();
+
+
+function x(){
+  let count = 0;
+  count++;
+}
+console.log(x())
+console.log(x())
