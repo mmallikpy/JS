@@ -155,13 +155,24 @@
 // console.log(testClosure()());
 
 
-const button_click = document.getElementById('buttonForCount')
-function btnCounter(){
-    let count = 0;
-    return button_click.addEventListener('click', function () {
-        count++;
-        console.log(count);
-    });
+// const button_click = document.getElementById('buttonForCount')
+// function btnCounter(){
+//     let count = 0;
+//     return button_click.addEventListener('click', function () {
+//         count++;
+//         console.log(count);
+//     });
+// }
+// btnCounter()
+
+
+function multiplierValue(){
+    return function innerMultiplier(val1, val2){
+        result = val1 * val2
+        console.log(result)
+    }
 }
-btnCounter()
+
+let multiplierfunction = multiplierValue()
+multiplierfunction(50, 5)
 

@@ -15,7 +15,7 @@ counter();
 counter();
 ```
 
-## Answer is :
+### Answer is :
 
 ```js
 1, 2;
@@ -37,7 +37,7 @@ function testClosure() {
 console.log(testClosure()());
 ```
 
-## Answer is :
+### Answer is :
 
 ```js
 100;
@@ -65,11 +65,31 @@ btnCounter();
 
 ## 4. Write a function `createMultiplier(multiplier)` that returns another function to multiply numbers.
 
+### Answer is:
+
+```js
+function multiplierValue() {
+  return function innerMultiplier(val1, val2) {
+    result = val1 * val2;
+    console.log(result);
+  };
+}
+
+let multiplierfunction = multiplierValue();
+multiplierfunction(50, 5);
+```
+
 ## 5. What happens if a closure references an object?
 
 - 1. The object is garbage collected immediately
 - 2. The object remains in memory as long as the closure exists
 - 3. The object is automatically cloned
 - 4. None of the Above.
+
+### Answer is:
+
+```js
+- 2. The object remains in memory as long as the closure exists
+```
 
 ## 6. Write a function factory of counter to increment, decrement, and reset a counter. Use closure to refer the count value across the functuions.
