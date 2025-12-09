@@ -24,6 +24,27 @@ ReferenceError;
 
 ## 2. Write a function processPayment(amount) that checks if the amount is positive and not exceeding balance. If any condition fails, throw appropriate errors
 
+### Answer is :
+
+```js
+function processPayment(amount) {
+  let balance = 500;
+  try {
+    if (amount <= 0) {
+      throw new Error("Your input is negative");
+    } else if (amount > balance) {
+      throw new Error("Balance is exceeding");
+    } else {
+      console.log("Pass");
+    }
+  } catch (error) {
+    console.log(error.message);
+  }
+}
+
+processPayment(0);
+```
+
 ## 3. Implement a custom error handling system for an e-commerce website that categorizes errors as
 
 - UserError

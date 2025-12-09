@@ -177,3 +177,21 @@
 // multiplierfunction(50, 5)
 
 
+
+function processPayment(amount){
+    let balance = 500;
+    try{
+        if (amount <= 0){
+            throw new Error("Your input is negative");
+        } else if (amount > balance){
+            throw new Error("Balance is exceeding");
+        } else{
+            console.log('Pass')
+        }
+
+    } catch (error){
+        console.log(error.message)
+    }
+}
+
+processPayment(0)
