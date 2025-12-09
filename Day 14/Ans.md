@@ -16,7 +16,7 @@ try {
 - TypeError
 - No error, it prints 10
 
-### Ans:
+### Answer is :
 
 ```js
 ReferenceError;
