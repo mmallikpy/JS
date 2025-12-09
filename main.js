@@ -166,13 +166,14 @@
 // btnCounter()
 
 
-function multiplierValue(){
-    return function innerMultiplier(val1, val2){
-        result = val1 * val2
-        console.log(result)
-    }
-}
+// function multiplierValue(){
+//     return function innerMultiplier(val1, val2){
+//         result = val1 * val2
+//         console.log(result)
+//     }
+// }
 
-let multiplierfunction = multiplierValue()
-multiplierfunction(50, 5)
+// let multiplierfunction = multiplierValue()
+// multiplierfunction(50, 5)
+
 
